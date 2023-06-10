@@ -1,0 +1,36 @@
+.hidden-panel{
+	animation-iteration-count: 1;
+	animation-name: example;
+	animation-fill-mode: forwards;
+	animation-duration: 1.5s;
+	overflow: hidden;
+}
+
+.visible-panel{
+	animation-iteration-count: 1;
+	animation-name: opening;
+	animation-fill-mode: forwards;
+	animation-duration: 1.5s;
+	overflow: hidden;
+}
+
+@keyframes example {
+	from {
+		visibility: visible;
+		width: 18rem;
+	}
+	to {
+		visibility: hidden;
+		width: 0px;
+	}
+  }
+@keyframes opening {
+	from {
+		visibility: hidden;		
+		width: 0px;
+	}
+	to {
+		visibility: visible;
+		width: 18rem;
+	}
+  }

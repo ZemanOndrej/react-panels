@@ -1,5 +1,5 @@
-import { LayoutData } from '../../App';
 import { PanelProps } from '../../Editor';
+import { LayoutData } from '../../data';
 
 type Props = {
 	props: PanelProps;
@@ -21,6 +21,7 @@ export default function LayoutPanelItem({ props: { panel, panelManager } }: Prop
 								id: segment.id,
 								title: segment.title,
 								type: segment.type,
+								index: panel.index + 1
 							})
 						}>
 						{segment.id}- {segment.title}

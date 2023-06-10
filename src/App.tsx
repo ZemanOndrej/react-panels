@@ -3,39 +3,9 @@ import { Editor } from './Editor';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import { Constants } from './constants';
+import { data } from './data';
 
-const gridData = {
-	id: '1',
-	title: 'New Grid',
-	type: Constants.grid,
-	gridRowConditionalStyles: [
-		{
-			id: '4',
-			title: 'grid row conditional style',
-			type: Constants.gridRowConditionalStyle
-		}
-	]
-};
-const kpiData = {
-	id: '2',
-	title: 'Kpi',
-	type: Constants.kpi
-};
-const layoutData = {
-	id: '0',
-	title: 'new layout',
-	type: Constants.layout,
-	segments: [gridData, kpiData]
-};
-const data = {
-	layout: layoutData
-};
 
-export type DataType = typeof data;
-export type LayoutData = typeof layoutData;
-export type GridData = typeof gridData;
-export type KpiData = typeof kpiData;
 
 function App() {
 	return (

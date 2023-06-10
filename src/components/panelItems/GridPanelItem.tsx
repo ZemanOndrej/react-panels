@@ -1,6 +1,6 @@
-import { GridData } from '../../App';
 import { PanelProps } from '../../Editor';
 import { Constants } from '../../constants';
+import { GridData } from '../../data';
 
 type Props = {
 	props: PanelProps;
@@ -23,6 +23,7 @@ export default function GridPanelItem({ props: { panel, panelManager } }: Props)
 								id: conditionalStyle.id,
 								title: conditionalStyle.title,
 								type: Constants.gridRowConditionalStyle,
+								index: panel.index + 1
 							})
 						}>
 						{conditionalStyle.id}- {conditionalStyle.title}
